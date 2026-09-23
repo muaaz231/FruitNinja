@@ -42,7 +42,7 @@ public class Main : MonoBehaviour
 
     public void randFruit()
     {
-        if(!freeze) //stops new fruits spawning until freeze ends
+        if (!freeze) //stops new fruits spawning until freeze ends
         {
             isSpawning = true;
             int num = Random.Range(0, 3);
@@ -136,7 +136,6 @@ public class Main : MonoBehaviour
         s += "\n 1. " + PlayerPrefs.GetFloat("Position1", 0) + " Points";
         s += "\n 2. " + PlayerPrefs.GetFloat("Position2", 0) + " Points";
         s += "\n 3. " + PlayerPrefs.GetFloat("Position3", 0) + " Points";
-        //Debug.Log("Current Score " + score);
 
         leaderboard.SetText(s);
     }
@@ -171,7 +170,7 @@ public class Main : MonoBehaviour
 
     public void startFreeze()
     {
-        if(freeze)
+        if (freeze)
         {
             CancelInvoke("randFruit");
             StartCoroutine(FreezeCoroutine());
@@ -209,14 +208,14 @@ public class Main : MonoBehaviour
     public void addScore(int s)
     {
         score += s;
-        if(score<0)
+        if (score<0)
             score = 0;
         scoreText.SetText("Score: " + score);
     }
 
     public void increaseDifficulty()
     {
-        if(started)
+        if (started)
         {
             disableClocks = true;
             InvokeRepeating("spawnMine",1f,2f);

@@ -42,7 +42,7 @@ public class Freezing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(m.getFreeze() && !isFreezing && transform.position.y >= 1.5f)
+        if (m.getFreeze() && !isFreezing && transform.position.y >= 1.5f)
         {
             freezetime();
         }

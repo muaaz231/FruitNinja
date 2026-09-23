@@ -25,10 +25,10 @@ public class FruitCol : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag("Cane"))
+        if (collision.collider.CompareTag("Cane"))
         {
 
-            if(gameObject.tag == "Mine")
+            if (gameObject.tag == "Mine")
             {
                 candyType.SetActive(false); //sets false in case it doesnt destroy fast enough
                 Destroy(candyType);
