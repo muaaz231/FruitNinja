@@ -42,8 +42,8 @@ The main gameplay logic is implemented in C# and handles object spawning, physic
 
 ## Project Status
 
-This is an archived project originally developed around 2024. It is preserved as a record of the completed project and may require additional configuration to run on modern hardware or software.
+This is an archived project originally developed around March 2025. It is preserved as a record of the completed project and may require additional configuration to run on modern hardware or software.
 
 ## Credits
-Programming & gameplay: Muaaz Aslam
-3D assets & additional programming: Ryan Sharma
+- Programming & gameplay: Muaaz Aslam
+- 3D assets & additional programming: Ryan Sharma
